@@ -1,12 +1,16 @@
 # Random Color Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
-
-Currently, two official plugins are available:
-
-## React Compiler
-
 A small React application that generates random colors in HEX or RGB format and uses the generated color as the page background.
+
+
+## Demo 
+
+
+
+
+
+https://github.com/user-attachments/assets/4a87a67b-22a1-4dcc-88c9-b88eef42176d
+
 
 ## Features
 
