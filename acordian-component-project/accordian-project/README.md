@@ -7,6 +7,26 @@ A React accordion built with Vite. It displays questions and answers and support
 
 The project demonstrates React state, event handlers, conditional rendering, and data-driven collection rendering. The folder and component currently use the spelling `accordian`; the documentation uses the conventional spelling `accordion`.
 
+
+## Demo Single Selection 
+
+
+https://github.com/user-attachments/assets/babdd4f4-c82e-481b-97e0-7504a4f657cd
+
+
+
+
+
+## Demo Multi Selection 
+
+
+
+
+
+
+https://github.com/user-attachments/assets/ed47926f-4cf5-4c85-9da8-5acb2ff4a161
+
+
 ## Features
 
 - Renders items from `src/components/accordian/data.js`.
