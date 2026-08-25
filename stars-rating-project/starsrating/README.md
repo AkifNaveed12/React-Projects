@@ -1,16 +1,88 @@
-# React + Vite
+# Star Rating Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A small React component that lets users choose a rating by clicking a row of stars. Moving over the stars previews a rating, and moving away restores the last selected value.
 
-Currently, two official plugins are available:
+This project is part of the React projects in the DevWeekends workspace and is built with Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Renders a configurable number of stars.
+- Highlights stars as the pointer moves across them.
+- Saves the selected rating when a star is clicked.
+- Restores the saved rating when the pointer leaves the star row.
+- Uses `react-icons` for the star icons.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- React 19
+- Vite
+- JavaScript (JSX)
+- `react-icons`
+- Oxlint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Getting Started
+
+From this project directory:
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite in your browser.
+
+## Available Scripts
+
+| Command           | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| `npm run dev`     | Starts the Vite development server with hot reload. |
+| `npm run build`   | Creates a production build in `dist/`.              |
+| `npm run preview` | Serves the production build locally.                |
+| `npm run lint`    | Checks the project with Oxlint.                     |
+
+## Component Usage
+
+The component is located at `src/components/star-rating/rating.jsx` and accepts one prop:
+
+| Prop        | Type     | Default | Description                     |
+| ----------- | -------- | ------- | ------------------------------- |
+| `noOfStars` | `number` | `5`     | The number of stars to display. |
+
+Example:
+
+```jsx
+import StarRating from "./components/star-rating/rating";
+
+function App() {
+  return <StarRating noOfStars={10} />;
+}
+```
+
+## How It Works
+
+The component keeps two pieces of state:
+
+- `rating` stores the star selected by the user.
+- `hover` stores the star currently under the pointer for the temporary preview.
+
+A star is styled as active when its index is less than or equal to the current hover value or selected rating. The selected value is currently managed inside the component and is not submitted to a backend.
+
+## Project Structure
+
+```text
+src/
+├── App.jsx
+├── App.css
+├── index.css
+└── components/
+		└── star-rating/
+				├── rating.jsx
+				└── styles.css
+```
+
+## Future Improvements
+
+- Add keyboard controls and accessible labels for each rating.
+- Expose a callback such as `onChange` for parent components.
+- Add a reset option and support half-star ratings.
+- Make the selected rating available to a form or API.
