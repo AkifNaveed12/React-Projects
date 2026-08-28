@@ -1,16 +1,86 @@
-# React + Vite
+# Load More Products
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A small React and Vite project that demonstrates client-side pagination with a **Load More Products** button. Products are fetched from the [DummyJSON Products API](https://dummyjson.com/docs/products), displayed in a responsive grid, and appended to the existing list without replacing previously loaded items.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Loads the first 20 products automatically when the app starts
+- Fetches the next 20 products when **Load More Products** is clicked
+- Uses the API `skip` parameter to request the correct page
+- Appends new products to the current list
+- Displays each product's thumbnail and title
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- JavaScript (JSX)
+- DummyJSON Products API
+- Oxlint
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+From this directory, install the dependencies:
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL printed by Vite in your browser.
+
+## Available Scripts
+
+| Command           | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `npm run dev`     | Starts the Vite development server with hot module replacement |
+| `npm run build`   | Creates a production build in `dist/`                          |
+| `npm run preview` | Serves the production build locally                            |
+| `npm run lint`    | Runs Oxlint against the project                                |
+
+## How It Works
+
+The main component is [`src/components/load-more-data/index.jsx`](src/components/load-more-data/index.jsx).
+
+1. The component starts with an empty product list and a page counter of `0`.
+2. An effect fetches 20 products from DummyJSON using `limit=20` and `skip=count * 20`.
+3. The response products are appended to the existing state.
+4. Clicking the button increments the counter, which triggers the next request.
+
+For example, the first request uses `skip=0`, the second uses `skip=20`, and the third uses `skip=40`.
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   └── load-more-data/
+│       ├── index.jsx       # Product fetching and rendering
+│       └── styles.css      # Product grid and button styles
+├── App.jsx                 # Application entry component
+├── App.css                 # App-level styles
+├── index.css               # Global styles
+└── main.jsx                # React application bootstrap
+```
+
+## API Dependency
+
+This project relies on the public DummyJSON endpoint:
+
+```text
+https://dummyjson.com/products?limit=20&skip=<offset>
+```
+
+Because the data is fetched at runtime, the development server needs network access. If the API is unavailable, no new products are added and the error is logged in the browser console.
