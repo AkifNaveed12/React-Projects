@@ -1,11 +1,15 @@
-import { useState } from 'react'
+
 import './App.css'
+import LoadMoreData from './components/load-more-data'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>hello akif</div>
+    <>
+    {/* load more products componenet */}
+    <LoadMoreData />
+    </>
+    
   )
 }
 
