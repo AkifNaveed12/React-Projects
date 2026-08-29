@@ -10,6 +10,14 @@ A small React and Vite project that demonstrates client-side pagination with a *
 - Appends new products to the current list
 - Displays each product's thumbnail and title
 
+## Demo
+
+
+
+https://github.com/user-attachments/assets/2bd5da44-0229-40b5-bce8-70e11be1f95c
+
+
+
 ## Tech Stack
 
 - React 19
