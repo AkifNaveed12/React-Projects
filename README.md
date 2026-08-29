@@ -51,6 +51,18 @@ A flexible accordion component with support for single and multi-selection modes
 - ✅ Smooth state transitions
 - ✅ Empty state handling
 
+## Demo
+### Multi Accordin demo
+
+https://github.com/user-attachments/assets/15aac7cd-a077-4dff-aa14-6ac51f389da8
+
+### Single Accordin Demo
+
+
+https://github.com/user-attachments/assets/3b8eafb2-b6b9-40e0-b2ca-7ef64bbde927
+
+
+
 **Tech Stack:** React, Vite, JavaScript  
 **Quick Start:**
 
@@ -72,6 +84,13 @@ A dynamic image carousel component that fetches images from an API and provides 
 - 🎯 Direct Slide Selection via Indicators
 - 📱 Responsive Design
 - ⚙️ Configurable Props (URL, page, limit)
+
+## Demo
+
+
+
+https://github.com/user-attachments/assets/bb640308-c480-4ad6-897d-370df8f1680e
+
 
 **Tech Stack:** React, Vite, Axios/Fetch API, react-icons  
 **Quick Start:**
@@ -95,6 +114,13 @@ A progressive data loading component demonstrating client-side pagination. Fetch
 - 🎯 Efficient Pagination with Skip Parameter
 - 🖼️ Product Image & Title Display
 
+## Demo
+
+
+
+https://github.com/user-attachments/assets/e5446380-b5ed-4513-8310-6c599337f3a2
+
+
 **Tech Stack:** React, Vite, REST API, Oxlint  
 **Quick Start:**
 
@@ -116,6 +142,13 @@ An interactive color generation utility that creates random colors in HEX or RGB
 - 🔀 Mode Switching Between HEX and RGB
 - 🎯 One-Click Color Generation
 - 📋 Live Color Display
+
+
+## Demo 
+
+
+https://github.com/user-attachments/assets/dd2f2baf-d41b-4c05-87ff-a43087bbd42d
+
 
 **Tech Stack:** React, Vite, JavaScript, CSS  
 **Quick Start:**
@@ -139,6 +172,12 @@ An interactive star rating component with visual feedback. Hover over stars to p
 - ♿ react-icons Integration
 - 🎨 Smooth Visual Feedback
 
+## Demo 
+
+
+https://github.com/user-attachments/assets/0137ede4-477a-492a-835e-895e882e186b
+
+
 **Tech Stack:** React, Vite, react-icons  
 **Quick Start:**
 
@@ -160,6 +199,12 @@ A recursive hierarchical tree component for displaying nested navigation menus o
 - ➕➖ Expand/Collapse Functionality
 - 🎯 Icon Indicators (Plus/Minus)
 - 📊 Flexible Data Structure
+
+## Demo 
+
+
+https://github.com/user-attachments/assets/775987bd-dd1c-46c7-b73b-c404a0d6604e
+
 
 **Tech Stack:** React, Vite, react-icons  
 **Quick Start:**
