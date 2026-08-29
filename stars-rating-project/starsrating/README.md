@@ -12,6 +12,12 @@ This project is part of the React projects in the DevWeekends workspace and is b
 - Restores the saved rating when the pointer leaves the star row.
 - Uses `react-icons` for the star icons.
 
+## Demo 
+
+
+https://github.com/user-attachments/assets/29943209-894a-4c9e-960a-e138c9cda937
+
+
 ## Tech Stack
 
 - React 19
