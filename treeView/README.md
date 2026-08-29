@@ -9,6 +9,13 @@ A recursive React component that renders a hierarchical tree/menu structure with
 - 🎨 **Icon Support** - Uses `react-icons` for intuitive plus/minus indicators
 - ⚡ **Built with Vite** - Fast development experience with hot module replacement (HMR)
 - 🧹 **Code Quality** - Includes Oxlint for code linting
+## Demo 
+
+
+
+https://github.com/user-attachments/assets/5aa1738c-72d6-42f8-ba7d-adee0d46d584
+
+
 
 ## Project Structure
 
