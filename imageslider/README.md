@@ -13,6 +13,13 @@ The demo uses the [Picsum Photos API](https://picsum.photos/) to provide a colle
 - Reusable component props for the API URL, page, and image limit.
 - Responsive state updates when the image source changes.
 
+## Demo 
+
+
+
+https://github.com/user-attachments/assets/7fc3e128-c95d-4b4f-a677-d4b61d279fd1
+
+
 ## Tech Stack
 
 - React 19
